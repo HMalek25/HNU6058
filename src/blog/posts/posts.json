@@ -1,0 +1,7 @@
+{
+    "title": "mon premier blog",
+    "layout": "layouts/post.html",
+    "tags": ["Mes articles"],
+    "auteur": "Halima Malek",
+    "lang": "fr"
+  }

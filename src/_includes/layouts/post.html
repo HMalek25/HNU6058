@@ -1,0 +1,22 @@
+{% extends "layouts/base.html" %}
+
+{% block head %}
+ {{ super() }}
+ <link rel='stylesheet' href='/css/post.css'>
+{% endblock %}
+
+{% block content %}
+ <h1>{{title}}</h1>
+ <div class="texte-du-post">
+ {{ content | safe }}
+ </div>
+ <footer>
+ <ul>
+ {% for tag in tags %}
+ <li>
+ <a href="/actualites/tag/{{ tag | slugify }}">{{tag}}</a>
+ </li>
+ {% endfor %}
+ </ul>
+</footer>
+{% endblock %}

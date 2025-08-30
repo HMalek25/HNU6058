@@ -1,0 +1,21 @@
+---
+layout: layouts/base.html
+title: "Bibliographie"
+description: "this is the description"
+---
+
+<h1>{{title}}</h1>
+
+<ul class="bibliography-list">
+ {% for item in zoteroBib %}
+    <li class="bibliography-item">
+    {{ item.data.title }}
+    {% if item.data.creators %}
+    {% for creator in item.data.creators %}
+        {{ creator.firstName }} {{ creator.lastName }}{% if not loop.last %}, {% endif %},
+    {% endfor %}
+    {% endif %}
+    {{ item.data.date}}
+    </li>
+ {% endfor %}
+</ul>
