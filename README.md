@@ -1,1 +1,21 @@
-Ce repo a été conçu pour l'atelier HNU6058 donné à l'Université de Montréal à l'été 2025.
+# Compte-Rendu 
+
+Le travail final de l'atelier HNU6058 était de créer un site web en utilisant le générateur de site statique Eleventy. J'ai choisi de développer un site pour le colloque étudiant en littératures que j'organise avec deux collègues, Robin Duclos et Antoine Vuillin. Le CIEL (Colloque Interuniversitaire Étudiant en Littératures) est un colloque organisé par des étudiant·es aux cycles supérieurs des départements de littératures des Universités UQAM, UdeM et Mcgill. À chaque année, ces trois universités s'alternent dans l'organisation et l'accueil de l'événement. Pour l'édition 2026, c'est le département des littératures de langue française de l'Université de Montréal qui est l'hôte. Il s'agira de la 30e édition de cet événement. Pourquoi créer un site pour cet événement? Ce colloque existe depuis maintenant trente ans et, pourtant, aucune trace de son histoire n'a été conservée. Les seules informations que j'ai trouvées étaient à travers d'anciennces publications Facebook. Ce site a donc pour intention de diffuser les informations relatives à l'édition que j'organise, mais aussi espère devenir un fonds d'archives numériques. Les participant·es des années précédentes qui auraient encore programme, affiche, actes, etc. sont donc chaleureusement invité·es à nous contacter afin que ces archives soient répertoriées ici. 
+
+### Composition du site
+
+Le site est composé de pages "principales" et d'un blog qui organise les "Actualités". Les pages principales sont : "Accueil', "Actualités", "Appel à propositions", "Archives", "À propos", "Nous joindre". Ces pages me semblaient les plus importantes, c'est pourquoi elles se retrouvent dans la barre de navigation. 
+- Sur la page "Actualités", on retrouve les nouvelles importantes que je publierai en amont du colloque, par exemple: lancement de la nouvelle édition, appel à candidatures, appel à proposition. Les publications des "Actualités" sont liées par un système de tags et j'ai également ajouté une pagination.
+- La page "Archives" correspond à la bibliographie Zotero. Si je réussis à obtenir des archives précédentes, je pourrais les organiser dans un groupe zotero et les afficher sur cette page. Pour l'instant, la seule modification que j'ai faite a été de changer le groupe ID par celui d'une autre bibliothèque pour mieux comprendre la logique de la commande "Fetch".
+- J'ai ajouté la page "Nous joindre" pour travailler une nouvelle commande en javascript. J'ai voulu créer un formulaire de contact pour toute personne qui souhaiterait nous envoyer un message. Pour l'instant, il ne s'agit que d'une fonction javascript qui permet de prévisualiser les éléments entrés dans les trois champs "Nom", "Email", "Message". Je pourrais imaginer une structure plus complexe en utilisant un système de formulaire externe que j'appellerais par l'API.
+
+### Personnalisation 
+La personnalisation du css pour le site a représenté une difficulté. J'ai effectué peu de modifications au fichier css qui était proposé dans le dossier. Le style répondait déjà au besoins de mon projet. Néanmoins, j'ai fait quelques ajouts, tels que les couleurs, la police, la mise en page de certaines pages. 
+
+### Améliorations envisagées 
+En ce qui concerne les difficultés rencontrées et les améliorations envisagées, je considère que la structure générale du site est adéquate. Les pages principales et la section d’actualités répondent aux besoins du projet. Toutefois, je souhaite approfondir le travail de personnalisation, notamment au niveau du style et de l’identité visuelle, afin de donner une cohérence graphique à cette édition du colloque. Il faudrait donc que je travaille davantage le css. J'aimerais également améliorer la bibliographie zotero. Lorsque j'entrais le groupe ID d'un groupe zotero créé pour le projet, la bibliographie de celui-ci ne s'affichait pas correctement sur le site. C'est pourquoi j'ai utilisé le groupe ID d'une bibliothèque déjà existante. J'aimerais travailer à rendre la bibliographie interactive pour qu'on puisse notamment cliquer sur les références bibliographiques. Le formulaire devra aussi être configuré correctement. Enfin, j'aimerais mettre le site en ligne. J’ai déjà créé ce dépôt Github, mais il reste à configurer GithubPages. Je sais que je dois créer une nouvelle branch avec mon dossier_site pour que le déploiement de GithubPages se fasse à partir de cette branch, mais je n'ai toujours pas réussi. 
+
+
+
+
+
