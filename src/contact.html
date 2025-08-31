@@ -1,0 +1,51 @@
+---
+layout: layouts/base.html
+title: "Nous joindre"
+description: Contact
+author: Halima Malek
+---
+<h1>{{title}}</h1>
+
+<form id="contact-form">
+  <label>
+    Nom :
+    <input type="text" name="name" required>
+  </label>
+  <br><br>
+  <label>
+    Email :
+    <input type="email" name="email" required>
+  </label>
+  <br><br>
+  <label>
+    Message :
+    <textarea name="message" required></textarea>
+  </label>
+  <br><br>
+  <button type="submit">Envoyer</button>
+</form>
+
+<hr>
+
+<h2>Prévisualisation :</h2>
+<div id="preview"></div>
+
+<script>
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault(); 
+
+    const form = e.target;
+    const name = form.name.value;
+    const email = form.email.value;
+    const message = form.message.value;
+
+    const preview = document.getElementById("preview");
+    preview.innerHTML = `
+      <p><strong>Nom :</strong> ${name}</p>
+      <p><strong>Email :</strong> ${email}</p>
+      <p><strong>Message :</strong> ${message}</p>
+    `;
+
+    form.reset();
+  });
+</script>
